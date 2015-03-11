@@ -199,9 +199,22 @@ public class Graph {
      * Unit tests the <tt>Graph</tt> data type.
      */
     public static void main(String[] args) {
-        In in = new In(args[0]);
-        Graph G = new Graph(in);
+//        In in = new In(args[0]);
+//        Graph G = new Graph(in);
+    	Graph G = new Graph(3);
+    	G.addEdge(0, 1);
+    	G.addEdge(0, 2);
+    	for (Integer integer : G.adj(0)) {
+    		StdOut.print(" ".concat(String.valueOf(integer)));
+		}
+    	StdOut.println();
+    	StdOut.println(G.V);
+    	StdOut.println(G.E);
         StdOut.println(G);
+        StdOut.println("Grau");
+        StdOut.println(G.degree(0));
+        StdOut.println("to string");
+        StdOut.println(G.toString());
     }
 
 }

@@ -239,6 +239,9 @@ public class BreadthFirstPaths {
             }
 
         }
+        StdOut.println();
+        StdOut.println(bfs.distTo(4));
+        
     }
 
 

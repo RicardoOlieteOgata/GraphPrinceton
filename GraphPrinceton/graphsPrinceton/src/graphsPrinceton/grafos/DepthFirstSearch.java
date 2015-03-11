@@ -109,6 +109,8 @@ public class DepthFirstSearch {
 			StdOut.println("connected");
 		StdOut.println();
 		StdOut.println(COUNT.concat(String.valueOf(search.count)));
+		StdOut.println();
+		StdOut.println(G.V());
 	}
 
 }
