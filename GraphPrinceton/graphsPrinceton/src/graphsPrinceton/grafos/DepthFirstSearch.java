@@ -96,7 +96,7 @@ public class DepthFirstSearch {
 		In in = new In(args[0]);
 		Graph G = new Graph(in);
 		int s = Integer.parseInt(args[1]);
-		DepthFirstSearch search = new DepthFirstSearch(G, s);
+		DepthFirstSearch search = new DepthFirstSearch(G, 0);
 		for (int v = 0; v < G.V(); v++) {
 			if (search.marked(v))
 				StdOut.print(v + " ");
